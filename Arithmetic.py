@@ -1,4 +1,6 @@
 import argparse
+from typing import List
+
 
 def main(alphabet: List[str], probability: List[float], to_encode: str):
     pass
