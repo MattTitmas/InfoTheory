@@ -53,7 +53,7 @@ if __name__ == '__main__':
     parser.add_argument('-a', '--alphabet', type=str, nargs='+', required=True,
                         help='List of symbols in the alphabet.')
     parser.add_argument('-p', '--probability', type=float, nargs='+', required=True,
-                        help='Probabilities of given symbols')
+                        help='Probabilities of given symbols.')
     args = parser.parse_args()
 
     main(args.alphabet, args.probability)
