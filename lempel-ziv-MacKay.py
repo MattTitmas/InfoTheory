@@ -33,7 +33,7 @@ def lempel_ziv_encode(to_encode: str) -> str:
             if words_added_at_current_length == (2 ** current_length):
                 current_length += 1
                 words_added_at_current_length = 0
-            codeword += binary + current_string[-1]
+            codeword += binary + current_string[-1] + ' '
 
             current_string = ""
             current_index += 1
