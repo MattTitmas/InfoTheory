@@ -54,7 +54,7 @@ def main(plain: str,
          bits: int):
     encoding = lempel_ziv_welch_encode(plain, bits)
     print(f'The LZW encoding of {plain} using a {bits} bit dictionary is:\n\t{encoding}')
-    decoding = lempel_ziv_welch_decode(''.join(encoding.split(' ')), ['a', 'b', 'c', '#'], bits)
+    decoding = lempel_ziv_welch_decode(''.join(encoding.split(' ')), list(dict.fromkeys(plain)), bits)
     print(f'The LZW decoding of {encoding} using a {bits} bit dictionary is:\n\t{decoding}')
 
 
